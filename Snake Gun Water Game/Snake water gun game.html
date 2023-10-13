@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Snake water gun game</title>
+        <h2>Let's play the game!!</h2><br>
+        <script>
+            let user = prompt("Enter S, W or G: ")
+cpuI = Math.floor(Math.random() * 3);
+cpu = ["S", "W", "G"][cpuI]
+const match = ()=>{
+ if(cpu == user){
+    return "Nobody. The match is tied."
+ }
+    else if(cpu == "S" && user == "W"){
+    return "cpu"
+    } 
+    else if(cpu == "S" && user == "G"){
+        return "user"
+    }
+    else if(cpu == "W" && user == "G"){
+        return "cpu"
+    }
+    else if(cpu == "W" && user == "S"){
+        return "user"
+    }
+        else if(cpu == "G" && user == "S"){
+            return "cpu"
+        }
+            else if(cpu == "G" && user == "W"){
+                return "user"
+            }
+}
+let result = match(cpu,user)
+document.write(`CPU:${cpu} and USER:${user} \n The winner is: ${result}`)
+        </script>
+
+    </head>
+    
+</html>
