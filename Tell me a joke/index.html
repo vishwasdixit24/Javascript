@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tell Me A Joke</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <h1>The JokeScript</h1>
+  <div class="container">
+    <div class="card text-center">
+      <div class="card-header">
+        <strong>The JokeScript - A Joke Generator</strong>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title" id="jokeContent"> "Why doesn’t the sun go to college? Because it has a million degrees!"
+        </h5>
+        <button type="button" class="btn btn-outline-dark" id="btn1" onclick="jokeGenerator()">Genrate Joke</button>
+      </div>
+      <div class="card-footer text-body-secondary">
+        <strong> Click the button above to generate next joke.</strong>
+
+      </div>
+      <audio id="myaudio1" src="Notification.mp3">
+        <!-- <source src="1st.mp3" type="audio/mpeg"> -->
+        <!-- <source src="2nd.mp3" type="audio/mpeg">
+            <source src="3rd.mp3" type="audio/mpeg">
+            Your browser does not support this audio -->
+      </audio>
+      <audio src="Notification.mp3" id="myaudio2"></audio>
+    </div>
+
+
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
