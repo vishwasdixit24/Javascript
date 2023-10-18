@@ -1,0 +1,30 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    font-size: 20px;
+  }
+  .bulb{
+    height: 380px;
+    width: 350px;
+    background-image: url('on.png');
+  /*   background: yellow; */
+  }
+  
+  .bulb-stop{
+    height: 380px;
+    width: 341px;
+    
+  }
+  
+  
+  img{
+      margin: 65px 22px;
+      height: 305px;
+  }
+  
+  div{
+    
+  }
+  
