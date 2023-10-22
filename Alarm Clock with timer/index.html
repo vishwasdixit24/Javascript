@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Codystar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="date">Date</div>
+    <div id="clock">
+        <span id="hour">00</span>
+        <b class="blink">:</b>
+        <span id="min">00</span>
+        <b class="blink">:</b>
+        <span id="sec">00</span>
+        <span id="ampm">&nbsp;AM</span>
+    </div>
+
+    <div id="set">
+        Set Alarm
+    </div>
+    <div>
+        <select id="option-h">
+            <option value="h" selected disabled hidden>Hours</option>
+        </select>
+        <select id="option-m">
+            <option value="m" selected disabled hidden>Minutes</option>
+        </select>
+        <select id="option-s">
+            <option value="s" selected disabled hidden>Seconds</option>
+        </select>
+        <select id="option-ampm">
+            <option value="AM/PM" selected disabled hidden>AM/PM</option>
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+        </select>
+    </div>
+    <div>
+        <button class="btn" onclick="setAlarm()">Set Alarm</button>
+        <button class="btn" onclick="setTimer()">Set Timer</button>
+        <button class="btn" onclick="mute()">Dismiss</button>
+    </div>
+    <div id="alarms">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
